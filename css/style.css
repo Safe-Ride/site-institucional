@@ -35,6 +35,15 @@
 /*---------------------------------------------------------------------
     skeleton
 ---------------------------------------------------------------------*/
+:root {
+	--amarelo: #ffd940;
+	--amarelo-claro: #ffe990;
+	--branco: #f7f7f0;
+	--cinza: #41485d;
+	--preto: #2d2a32;
+	--fonte: 'poppins', sans-serif;
+}
+
 
 * {
 	box-sizing: border-box !important;
@@ -45,16 +54,16 @@ html {
 }
 
 body {
-	color: #666666;
+	background: var(--branco);
 	font-size: 14px;
-	font-family: 'poppins', sans-serif;
+	font-family: var(--fonte);
 	line-height: 1.80857;
 	font-weight: normal;
 	overflow-x: hidden;
 }
 
 a {
-	color: #1f1f1f;
+	color: var(--preto);
 	text-decoration: none !important;
 	outline: none !important;
 	-webkit-transition: all .3s ease-in-out;
@@ -118,7 +127,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-	color: #212121;
+	color: var(--preto);
 	text-decoration: none!important;
 	opacity: 1
 }
@@ -143,7 +152,7 @@ p {
 }
 
 a {
-	color: #222222;
+	color: var(--preto);
 	text-decoration: none;
 	outline: none !important;
 }
@@ -1145,9 +1154,9 @@ nav.main-menu {
 	vertical-align: middle;
 }
 
-.main-menu ul>li:nth-child (6) {
+/* .main-menu ul>li:nth-child (6) {
 	padding-right: 0px;
-}
+} */
 
 .nav>li {
 	position: inherit;
@@ -1228,7 +1237,7 @@ nav.main-menu {
 }
 
 .text-a {
-	color: #fff;
+	color: var(--branco);
 	text-transform: uppercase;
 	font-size: 40px;
 	line-height: 40px;
@@ -1236,7 +1245,7 @@ nav.main-menu {
 }
 
 .text-b {
-	color: #fff;
+	color: var(--branco);
 	font-size: 28px;
 	text-transform: uppercase;
 	line-height: 30px;
@@ -1244,7 +1253,7 @@ nav.main-menu {
 }
 
 .text-c {
-	color: #ffffff;
+	color: var(--branco);
 	font-size: 31px;
 	font-weight: 300;
 	text-transform: uppercase;
@@ -1692,7 +1701,7 @@ font-size: 18px;
 }
 .header {
 	background: #fff;
-	padding-bottom: 35px;
+	/* padding-bottom: 35px; */
 }
 
 .logo a {
@@ -2370,4 +2379,101 @@ text-align: center;
 	left: 10px;
 	top: inherit;
 	bottom: 10px;
+}
+
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvV */
+
+.menu-area-main li:hover .btn, .menu-area-main li:focus .btn {
+	color: var(--branco);
+}
+
+.btn {
+	padding: 7px 41px !important;
+	margin-top: 30px;
+	border-radius: 5px;
+	display: inline-block;
+	float: right;
+	text-align: center;
+}
+
+.btn-yellow {
+	background: var(--amarelo);
+	color: var(--preto);
+}
+
+.btn-yellow:hover {
+	color: var(--branco);
+}
+
+.btn-black {
+	background-color: var(--preto);
+	color: var(--branco);
+}
+
+.btn-black:hover {
+	color: var(--amarelo);
+}
+
+.btn-white {
+	background: var(--branco);
+	border: var(--amarelo) solid 2px;
+	color: var(--preto) !important;
+}
+
+.btn-white:hover {
+	background: var(--amarelo);
+	color: var(--preto);
+}
+
+
+.header {
+	background-color: var(--branco);
+}
+
+.main-menu ul > li a {
+	color: var(--preto);
+}  
+
+.banner-main {
+	background-color: var(--branco);
+}
+
+.banner-main h1 {
+	font-size: 30px;
+}
+
+.banner-main p {
+	color: var(--preto);
+}
+
+.banner-motorista{
+	background: var(--preto);
+}
+
+.banner-motorista .card {
+	height: 100%;
+	background-color: var(--branco);
+	border-top: solid var(--amarelo) 8px;
+	text-align: center;
+}
+
+.banner-motorista h2 {
+	color: var(--branco);
+}
+
+.banner-responsavel {
+	background: var(--amarelo);
+}
+
+.banner-responsavel h2 {
+	color: var(--preto);
+}
+
+.banner-responsavel .card {
+	height: 100%;
+	padding: 30px 20px;
+	box-shadow: #00000040 0px 0px 19px 0px;
+	margin-bottom: 30px;
+	text-align: center;
+	background-color: var(--branco);
 }
