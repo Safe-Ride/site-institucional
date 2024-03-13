@@ -466,10 +466,6 @@ a.readmore_bt {
 	text-align: center;
 }
 
-.logo {
-	float: left;
-}
-
 nav.main-menu {
 	float: right;
 	margin-left: 0;
@@ -1704,14 +1700,6 @@ font-size: 18px;
 	/* padding-bottom: 35px; */
 }
 
-.logo a {
-	font-size: 40px;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #fff;
-	line-height: 40px;
-}
-
 .relative {
 	position: absolute;
 	top: 50%;
@@ -2383,6 +2371,14 @@ text-align: center;
 
 /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvV */
 
+.logo {
+	float: left;
+}
+
+.logo img {
+	
+}
+
 .menu-area-main li:hover .btn, .menu-area-main li:focus .btn {
 	color: var(--branco);
 }
@@ -2425,7 +2421,6 @@ text-align: center;
 	color: var(--preto);
 }
 
-
 .header {
 	background-color: var(--branco);
 }
@@ -2446,6 +2441,10 @@ text-align: center;
 	color: var(--preto);
 }
 
+.icone {
+	color: var(--cinza);
+}
+
 .banner-motorista{
 	background: var(--preto);
 }
@@ -2455,6 +2454,10 @@ text-align: center;
 	background-color: var(--branco);
 	border-top: solid var(--amarelo) 8px;
 	text-align: center;
+}
+
+.banner-motorista img {
+	
 }
 
 .banner-motorista h2 {
@@ -2476,6 +2479,35 @@ text-align: center;
 	margin-bottom: 30px;
 	text-align: center;
 	background-color: var(--branco);
+}
+
+.banner-sobre-nos p {
+	color: var(--preto);
+}
+
+.contato h3 {
+	color: var(--branco);
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 30px;
+	padding-bottom: 30px;
+	text-transform: uppercase;
+}
+
+.contato p {
+	color: var(--branco);
+	font-size: 17px;
+	line-height: 27px;
+}
+
+ul.paginas li a {
+	color: var(--branco);
+	font-size: 17px;
+	line-height: 27px;
+}
+
+ul.paginas li a:hover {
+	color: var(--amarelo);
 }
 
 .campo {
