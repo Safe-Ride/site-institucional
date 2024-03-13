@@ -2477,3 +2477,42 @@ text-align: center;
 	text-align: center;
 	background-color: var(--branco);
 }
+
+.campo {
+	width: 100%;
+}
+
+.row {
+	display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+	margin-bottom: 30px;
+	justify-content: center;
+}
+
+.btn-c {
+    padding: 7px 41px !important;
+    margin-top: 30px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+	maxwidth: 200px;
+}
+
+.col-md-12 {
+	position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.main_form {
+	background: #fff;
+    padding: 40px;
+	border-radius: 10px;
+}

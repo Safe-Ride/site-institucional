@@ -10,6 +10,9 @@
     .header-search {
         padding: 15px 0px;
     }
+    .col-md-12{
+        width: 80%;
+    }
 }
 
 
@@ -180,6 +183,13 @@
     .product-bg .product-bg-white .product-box h3 {font-size: 13px;}
     .yellow_bg .yellow-box a {margin-left: 0px;}
     .contact h3 {font-size: 24px;}
+
+    .btn-c{
+        width: 350px;
+    }
+    .col-md-12{
+        width: 80%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -247,6 +257,12 @@ padding: 1px 0px 1px 0px;
         height: 400px;
    
 }
+    .col-md-12{
+        width: 80%;
+    }
+    .btn-c{
+        width: 350px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
