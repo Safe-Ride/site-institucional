@@ -137,6 +137,9 @@
     .banner-main .carousel-caption {
         background: transparent;
     }
+    .btn-c{
+        width: 350px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
