@@ -27,9 +27,9 @@
 
 <body class="main-layout">
     <!-- loader  -->
-    <div class="loader_bg">
+    <!-- <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
-    </div>
+    </div> -->
     <!-- end loader -->
     <!-- header -->
     <header>
@@ -71,30 +71,50 @@
            <div class="row">
               <div class="col-md-12">
                  <div class="titlepage">
-                    <h3>Cadastro de Responsável</h3>
-                    <p>Realize o seu cadastro para utilizar nosso serviço</p>
+                    <h3 id="tituloCadastro">Cadastro de Responsável</h3>
+                    <p id="explicacaoCadastro">Realize o seu cadastro para utilizar nosso serviço</p>
                  </div>
               </div>
            </div>
         </div>
      </div>
 
-    <div class="contact">
+     <div class="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-
                     <form class="main_form">
-                        <div class="row">
-                            <div class="campo">
-                                <input class="form-control" placeholder="Email" type="text">
+                        <div class="row" id="infResponsavel">
+                            <div class="row r2">
+                                <input class="form-control ipt l2" placeholder="Nome" type="text" id="nome">
+                                <input class="form-control ipt m2" placeholder="CPF" type="text" id="cpf">
                             </div>
-                            <div class="campo">
-                                <input class="form-control" placeholder="Senha" type="password">
+                            <div class="row r2">
+                                <input class="form-control ipt s2" placeholder="Telefone" type="tel" id="telefone">
+                                <input class="form-control ipt ml2" placeholder="Email" type="email" id="email">
                             </div>
-                            <div class=" col-md-12">
-                                <button class="btn-c btn-black m-3">Entrar</button>
+                            <div class="row r2">
+                                <input class="form-control ipt ig2" placeholder="Senha" type="password" id="senha">
+                                <input class="form-control ipt ig2" placeholder="Confirmar Senha" type="password" id="confSenha">
                             </div>
+                                <button type="button" class="btn-c btn-black m-3" id="cadastroResponsavel" onclick="cadastrarResponsavel()">Cadastrar</button>
+                        </div>
+
+                        <div class="row invisible" id="infEndereco">
+                            <div class="row r2">
+                                <input class="form-control ipt m3" placeholder="CEP" type="text" id="cep">
+                                <input class="form-control ipt m3" placeholder="Localidade" type="text" id="localidade">
+                                <input class="form-control ipt exs2" placeholder="UF" type="text" id="uf">
+                            </div>
+                            <div class="row r2">
+                                <input class="form-control ipt exl2" placeholder="Logradouro" type="text" id="logradouro">
+                                <input class="form-control ipt exs2" placeholder="Número" type="text" id="numero">
+                            </div>
+                            <div class="row r2">
+                                <input class="form-control ipt l2" placeholder="Bairro" type="text" id="bairro">
+                                <input class="form-control ipt m2" placeholder="Complemento" type="text" id="complemento">
+                            </div>
+                                <button type="button" class="btn-c btn-black m-3" id="cadastroEndereco">Cadastrar</button>
                         </div>
                     </form>
                 </div>
@@ -194,6 +214,17 @@
                     $(this).removeClass('transition');
                 });
             });
+
+            function cadastrarResponsavel() {
+                var infResponsavel = document.getElementById("infResponsavel")
+                var infEndereco = document.getElementById("infEndereco")
+
+                infResponsavel.classList.add('invisible')
+                infEndereco.classList.remove('invisible')
+
+                tituloCadastro.innerHTML = "Cadastre sua localização";
+                explicacaoCadastro.innerHTML = "Cadastre sua localização para finalizar o cadastro";
+            }
 
         </script>
 </body>

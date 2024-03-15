@@ -27,9 +27,9 @@
 
 <body class="main-layout">
     <!-- loader  -->
-    <div class="loader_bg">
+    <!-- <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
-    </div>
+    </div> -->
     <!-- end loader -->
     <!-- header -->
     <header>
@@ -68,32 +68,53 @@
 
     <div class="brand_color">
         <div class="container">
-           <div class="row">
-              <div class="col-md-12">
-                 <div class="titlepage">
-                    <h3>Cadastro de Motorista</h3>
-                    <p>Realize o seu cadastro para utilizar nosso serviço</p>
-                 </div>
-              </div>
-           </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h3 id="tituloCadastro">Cadastro de Motorista</h3>
+                        <p id="explicacaoCadastro">Realize o seu cadastro para utilizar nosso serviço</p>
+                    </div>
+                </div>
+            </div>
         </div>
-     </div>
+    </div>
 
     <div class="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <form class="main_form">
-                        <div class="row">
-                            <div class="campo">
-                                <input class="form-control" placeholder="Email" type="text">
+                        <div class="row" id="infMotorista">
+                            <div class="row r2">
+                                <input class="form-control ipt l2" placeholder="Nome" type="text" id="nome">
+                                <input class="form-control ipt m2" placeholder="CPF" type="text" id="cpf">
                             </div>
-                            <div class="campo">
-                                <input class="form-control" placeholder="Senha" type="password">
+                            <div class="row r2">
+                                <input class="form-control ipt s2" placeholder="Telefone" type="tel" id="telefone">
+                                <input class="form-control ipt ml2" placeholder="Email" type="email" id="email">
                             </div>
-                            <div class=" col-md-12">
-                                <button class="btn-c btn-black m-3">Entrar</button>
+                            <div class="row r2">
+                                <input class="form-control ipt ig2" placeholder="Senha" type="password" id="senha">
+                                <input class="form-control ipt ig2" placeholder="Confirmar Senha" type="password" id="confSenha">
                             </div>
+                            <div class="row r2">
+                                <input class="form-control ipt ig3" placeholder="CNH" type="text" id="cnh">
+                                <input class="form-control ipt ig3" placeholder="CRM" type="text" id="crm">
+                                <input class="form-control ipt ig3" placeholder="CRMC" type="text" id="crmc">
+                            </div>
+                                <button type="button" class="btn-c btn-black m-3" id="cadastroMotorista" onclick="cadastrarMotorista()">Cadastrar</button>
+                        </div>
+
+                        <div class="row invisible" id="infCarro">
+                            <div class="row r2">
+                                <input class="form-control ipt s2" placeholder="Placa" type="text" id="placa">
+                                <input class="form-control ipt ml2" placeholder="marca" type="text" id="marca">
+                            </div>
+                            <div class="row r2">
+                                <input class="form-control ipt l2" placeholder="Modelo" type="text" id="modelo">
+                                <input class="form-control ipt m2" placeholder="ano" type="text" id="ano">
+                            </div>
+                                <button type="button" class="btn-c btn-black m-3" id="cadastroCarro">Cadastrar</button>
                         </div>
                     </form>
                 </div>
@@ -193,6 +214,17 @@
                     $(this).removeClass('transition');
                 });
             });
+
+            function cadastrarMotorista() {
+                var infMotorista = document.getElementById("infMotorista")
+                var infCarro = document.getElementById("infCarro")
+
+                infMotorista.classList.add('invisible')
+                infCarro.classList.remove('invisible')
+
+                tituloCadastro.innerHTML = "Cadastro de Carro";
+                explicacaoCadastro.innerHTML = "Cadastre seu carro para terminar seu cadastro";
+            }
 
         </script>
 </body>

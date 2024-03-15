@@ -315,6 +315,11 @@ padding: 1px 0px 1px 0px;
     ul.contant_icon {
         margin-bottom: 20px;
     }
+
+    .ipt{
+        width: 100%;
+    }
+    
 }
 
 @media (max-width: 575px) {
@@ -398,5 +403,9 @@ padding: 1px 0px 1px 0px;
     }
     ul.contant_icon {
         margin-bottom: 20px;
+    }
+
+    .ipt {
+        width: 100%;
     }
 }

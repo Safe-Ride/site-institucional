@@ -2518,10 +2518,15 @@ ul.paginas li a:hover {
 	display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-	margin-bottom: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+	margin-bottom: 0px;
 	justify-content: center;
+	width: 100%;
+}
+
+.invisible {
+	display: none;
 }
 
 .btn-c {
@@ -2537,14 +2542,54 @@ ul.paginas li a:hover {
 	position: relative;
     width: 100%;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
     display: flex;
     justify-content: center;
+}
+
+.r2{
+	justify-content: space-between;
 }
 
 .main_form {
 	background: #fff;
     padding: 40px;
 	border-radius: 10px;
+	margin-bottom: 40px;
+}
+
+
+.m2 {
+	width: 40%;
+}
+
+.l2 {
+	width: 55%;
+}
+
+.ml2 {
+	width: 60%;
+}
+
+.s2 {
+	width: 35%;
+}
+
+.exl2 {
+	width: 70%;
+}
+
+.exs2 {
+	width: 25%;
+}
+
+.m3 {
+	width: 35%;
+}
+
+.ig2 {
+	width: 47.5%;
+}
+
+.ig3 {
+	width: 31%;
 }
