@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <title>Safe Ride</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+</head>
+
+<body class="main-layout">
+    <!-- loader  -->
+    <!-- <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div> -->
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="container">
+            <div class="row">
+               <div class="col-xl-2 col-lg-2 col-md-1 col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo" id="logo"> <a href="index.html"><img src="images/logo.jpg" alt="logo" /></a> </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-10 col-lg-10 col-md-11 col-sm-9">
+                  <div class="menu-area">
+                     <div class="limit-box">
+                        <nav class="main-menu">
+                           <ul class="menu-area-main">
+                              <li> <a href="index.html">Página Inicial</a> </li>
+                              <li> <a href="motorista.html">Sou Motorista</a> </li>
+                              <li> <a href="responsavel.html">Sou Responsável</a> </li>
+                              <li><a  href="entrar.html">Entrar</a></li>
+                           </ul>
+                          
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+    </header>
+
+    <div class="brand_color">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h3 id="tituloCadastro">Cadastro de Motorista</h3>
+                        <p id="explicacaoCadastro">Realize o seu cadastro para utilizar nosso serviço</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="main_form">
+                        <div class="row" id="infMotorista">
+                            <div class="row r2">
+                                <input class="form-control ipt l2" placeholder="Nome" type="text" id="nome">
+                                <input class="form-control ipt m2" placeholder="CPF" type="text" id="cpf">
+                            </div>
+                            <div class="row r2">
+                                <input class="form-control ipt s2" placeholder="Telefone" type="tel" id="telefone">
+                                <input class="form-control ipt ml2" placeholder="Email" type="email" id="email">
+                            </div>
+                            <div class="row r2">
+                                <input class="form-control ipt ig2" placeholder="Senha" type="password" id="senha">
+                                <input class="form-control ipt ig2" placeholder="Confirmar Senha" type="password" id="confSenha">
+                            </div>
+                            <div class="row r2">
+                                <input class="form-control ipt ig3" placeholder="CNH" type="text" id="cnh">
+                                <input class="form-control ipt ig3" placeholder="CRM" type="text" id="crm">
+                                <input class="form-control ipt ig3" placeholder="CRMC" type="text" id="crmc">
+                            </div>
+                                <button type="button" class="btn-c btn-black m-3" id="cadastroMotorista" onclick="cadastrarMotorista()">Cadastrar</button>
+                        </div>
+
+                        <div class="row invisible" id="infCarro">
+                            <div class="row r2">
+                                <input class="form-control ipt s2" placeholder="Placa" type="text" id="placa">
+                                <input class="form-control ipt ml2" placeholder="marca" type="text" id="marca">
+                            </div>
+                            <div class="row r2">
+                                <input class="form-control ipt l2" placeholder="Modelo" type="text" id="modelo">
+                                <input class="form-control ipt m2" placeholder="ano" type="text" id="ano">
+                            </div>
+                                <button type="button" class="btn-c btn-black m-3" id="cadastroCarro">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  FOOTER -->
+    <footer>
+        <div class="footer pb-3">
+           <div class="container">
+              <div class="row">
+                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <img src="images/logo.jpg" alt="">
+                 </div>
+                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="contato mt-5">
+                       <h3>Contato</h3>
+                       <p><i class="fa fa-map-marker"></i>&nbsp Rua Haddock Lobo, 595 - Cerqueira César, São Paulo - SP, 01414-001</p>
+                       <p><i class="fa fa-phone"></i>&nbsp exemplo telefone</p>
+                       <p><i class="fa fa-envelope"></i>&nbsp exemplo email</p>
+                    </div>
+                 </div>
+                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="contato mt-5">
+                       <h3>Páginas</h3>
+                       <ul class="paginas">
+                          <li> <a href="./index.html">Página Inicial</a></li>
+                          <li> <a href="./motorista.html">Sou Motorista</a></li>
+                          <li> <a href="./responsavel.html">Sou Responsável</a></li>
+                          <li> <a href="#sobre-nos">Sobre Nós</a></li>
+                       </ul>
+                    </div>
+                 </div>
+              </div>
+           </div>
+  
+        </div>
+     </footer>
+        <!-- end footer -->
+        <!-- Javascript files-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.0.0.min.js"></script>
+        <script src="js/plugin.js"></script>
+        <!-- sidebar -->
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".fancybox").fancybox({
+                    openEffect: "none",
+                    closeEffect: "none"
+                });
+
+                $(".zoom").hover(function () {
+
+                    $(this).addClass('transition');
+                }, function () {
+
+                    $(this).removeClass('transition');
+                });
+            });
+
+            function cadastrarMotorista() {
+                var infMotorista = document.getElementById("infMotorista")
+                var infCarro = document.getElementById("infCarro")
+
+                infMotorista.classList.add('invisible')
+                infCarro.classList.remove('invisible')
+
+                tituloCadastro.innerHTML = "Cadastro de Carro";
+                explicacaoCadastro.innerHTML = "Cadastre seu carro para terminar seu cadastro";
+            }
+
+        </script>
+</body>
+
+</html>
