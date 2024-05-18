@@ -10,13 +10,14 @@
     --branco: #f7f7f0;
     --cinza: #41485d;
     --preto: #2d2a32;
-    --fonte: 'poppins', sans-serif;
+    --fonte: 'Montserrat', sans-serif;
 }
 .banner-main{
     background-color: var(--branco);
-    position: absolute;
     width: 100%;
+    
 }
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -27,5 +28,73 @@
 
 }
 .banner-main-text{
-    grid-column: span 4;
+    grid-column: 1 / span 4;  
+    margin-top: 3rem;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+}
+.text-uppercase{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight:900;
+}
+.banner-main-text p{
+    margin: 0;
+    margin-top: 2rem;
+    font-weight: 300;
+    font-size: 16px;
+}
+.img-van{
+    display: flex;
+    grid-column: span 8;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.img-Banner {
+    width: 100%;  
+    max-width: 638px;  
+    height: auto;  
+    max-height: 369px; 
+    object-fit: contain;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;  
+    align-items: center; 
+    padding: 5px; 
+    border-radius: 5px;  
+}
+
+.button-container a {
+    margin: 10px 0;  
+    width: 100%;  
+    text-align: center; 
+    color: white;  
+    padding: 10px;  
+    text-decoration: none;  
+    border-radius: 5px;  
+}
+
+.btn-yellow {
+    background-color: var(--amarelo);
+    color: var(--preto) !important;
+}
+
+.btn-black {
+    background-color: var(--preto);
+    border: 1px solid white;  
+}
+.vantagens-motorista{
+    background-color: var(--preto);
+    width: 100%;
+}
+.vantagens-motorista .title{
+    margin-top: 2rem;
+    font-size: 32px;
+    grid-column: 5 / span 5;
+    color: var(--branco);
 }

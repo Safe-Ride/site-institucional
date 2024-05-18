@@ -25,6 +25,8 @@
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
+    
+    
 }
 
 .navbar {
@@ -39,7 +41,7 @@
 }
 
 .logo img {
-    grid-column: 3;
+    grid-column: 1;
 	max-width: 5rem;
 
 }
