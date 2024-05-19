@@ -15,7 +15,7 @@
 
 .card {
   width: 300px;
-  border: 1px solid var(--preto);
+  border: 1px solid var(--amarelo);
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -49,14 +49,9 @@
   color: #555;
   font-weight: 300;
 }
-.line-yellow{
-  background-color: var(--amarelo);
-  width: 100%;
-  height: 8px;
-  margin-bottom: 1rem;
-}
+
 .line-black{
-  background-color: var(--amarelo);
+  background-color: var(--preto);
   width: 100%;
   height: 8px;
   margin-bottom: 1rem;
