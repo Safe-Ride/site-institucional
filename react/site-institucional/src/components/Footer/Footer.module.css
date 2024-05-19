@@ -1,0 +1,44 @@
+:root {
+    --header-height: 3.5rem;
+    --h2-font-size: 1.25rem;
+    --small-font-size: 0.813rem;
+    --font-semi-bold: 600;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --amarelo: #ffd940;
+    --amarelo-claro: #ffe990;
+    --branco: #f7f7f0;
+    --cinza: #41485d;
+    --preto: #2d2a32;
+    --fonte: 'poppins', sans-serif;
+}
+.footer{
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 5% 0 3% 0;
+    font: var(--fonte);
+    justify-content: end;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    
+    
+}
+.logo {
+	float: left;
+}
+
+.logo img {
+    grid-column: 1;
+	max-width: 10rem;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
