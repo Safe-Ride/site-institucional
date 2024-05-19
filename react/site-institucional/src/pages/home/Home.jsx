@@ -5,6 +5,7 @@ import Van from "../../utils/assets/van-escolar.png"
 import Card from "../../components/cards/Cards";
 import CardBlack from "../../components/cards/Card-black"
 import SobreNos from "../../utils/assets/sobre-nos.jpg"
+import Footer from "../../components/Footer/Footer"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear, faEye, faShieldHalved } from '@fortawesome/free-solid-svg-icons';
 import { faBell, faComments, faClock } from '@fortawesome/free-regular-svg-icons'
@@ -120,6 +121,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+      
+      <Footer />
 
     </>
 
