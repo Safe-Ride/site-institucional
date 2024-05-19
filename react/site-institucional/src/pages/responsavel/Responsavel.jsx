@@ -3,6 +3,7 @@ import styles from "./Responsavel.module.css";
 import Header from "../../components/Header/Header";
 import Criancas from "../../utils/assets/criancas-van.png";
 import Card from "../../components/cards/Cards";
+import Footer from "../../components/Footer/Footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShieldHalved } from '@fortawesome/free-solid-svg-icons';
 import { faBell, faComments } from '@fortawesome/free-regular-svg-icons';
@@ -69,10 +70,10 @@ const Responsavel = () => {
               experiência ao disponibilizar boletos de pagamento no app, indicando quais foram pagos e quais estão
               pendentes, eliminando preocupações relacionadas a pagamentos.
             </h3>
-
           </div>
         </div>
       </div>
+      <Footer/>
     </>
 
   );

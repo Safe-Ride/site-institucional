@@ -212,7 +212,6 @@
     grid-column: 1 / span 6;
     justify-content: center;
     align-items: center;
-
 }
 .img-banner-sobre-nos{
     margin-top: 6rem;
@@ -221,6 +220,7 @@
     height: auto;  
     max-height: 369px; 
     object-fit: contain;
+    border-radius: 8px;
 }
 .banner-sobre-nos{
     grid-column: 7 / span 5;  
