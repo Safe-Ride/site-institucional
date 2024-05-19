@@ -170,3 +170,33 @@
     border-radius: 5px;
     padding: 8px 2rem 8px;
 }
+.img-sobre-nos{
+    display: flex;
+    grid-column: 1 / span 6;
+    justify-content: center;
+    align-items: center;
+
+}
+.img-banner-sobre-nos{
+    margin-top: 6rem;
+    width: 100%;  
+    max-width: 638px;  
+    height: auto;  
+    max-height: 369px; 
+    object-fit: contain;
+}
+.banner-main .banner-sobre-nos{
+    grid-column: 7 / span 5;  
+    margin-top: 9rem;
+    margin-left: 3rem;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    text-align: center;
+}
+.banner-main .banner-sobre-nos .text-uppercase{
+    margin-bottom: 2rem;
+}
+.banner-main .banner-sobre-nos .pt-2{
+    font-weight: 300;
+}
