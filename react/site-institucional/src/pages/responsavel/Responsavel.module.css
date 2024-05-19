@@ -12,7 +12,7 @@
     --preto: #2d2a32;
     --fonte: 'Montserrat', sans-serif;
 }
-.banner-responsavel{
+.banner-main{
     background-color: var(--branco);
     width: 100%;
     
@@ -40,7 +40,7 @@
 .text-uppercase{
     text-transform: uppercase;
     font-size: 32px;
-    font-weight:900;
+    font-weight: 900;
 }
 .banner-main-text p{
     margin: 0;
@@ -96,6 +96,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 0 0 3% 0;
 }
 .vantagens-motorista .container{
     display: flex;
@@ -110,6 +111,9 @@
     text-transform: uppercase;
     grid-column: 5 / span 5;
     color: var(--branco);
+}
+.vantagens-motorista span {
+    color: var(--amarelo);
 }
 .row{
     display: flex;
@@ -165,4 +169,74 @@
 	min-height: 1px;
 	display: flex;
 	justify-content: center;
+}
+
+.vantagens-responsavel{
+    background-color: var(--amarelo);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 3% 0;
+}
+.vantagens-responsavel .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.vantagens-responsavel .title{
+    margin: 2rem;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    grid-column: 5 / span 5;
+    color: var(--preto);
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+.btn-card-black{
+    background: var(--preto);
+    border: var(--preto) solid 2px;
+    color: var(--branco) !important;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 2rem 8px;
+}
+.img-sobre-nos{
+    display: flex;
+    grid-column: 1 / span 6;
+    justify-content: center;
+    align-items: center;
+
+}
+.img-banner-sobre-nos{
+    margin-top: 6rem;
+    width: 100%;  
+    max-width: 638px;  
+    height: auto;  
+    max-height: 369px; 
+    object-fit: contain;
+}
+.banner-sobre-nos{
+    grid-column: 7 / span 5;  
+    margin-left: 3rem;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    text-align: center;
+}
+
+.banner-main .banner-sobre-nos{
+    margin-top: 9rem;
+}
+.banner-main .banner-sobre-nos .text-uppercase{
+    margin-bottom: 2rem;
+}
+.banner-main .banner-sobre-nos .pt-2{
+    font-weight: 500;
 }
