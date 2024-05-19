@@ -7,11 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear, faEye, faShieldHalved, faClock } from '@fortawesome/free-solid-svg-icons';
 
 
-
-
-
-
-
 const Home = () => {
   return (
 
