@@ -125,11 +125,47 @@
     display: inline-block;
     float: right;
     text-align: center;
+    margin-bottom: 2rem;
 }
 .btn-white{
     background: var(--branco);
     border: var(--amarelo) solid 2px;
     color: var(--preto) !important;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 2rem 8px;
+}
+.vantagens-responsavel{
+    background-color: var(--amarelo);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.vantagens-responsavel .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.vantagens-responsavel .title{
+    margin: 2rem;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    grid-column: 5 / span 5;
+    color: var(--preto);
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+.btn-card-black{
+    background: var(--preto);
+    border: var(--preto) solid 2px;
+    color: var(--branco) !important;
     text-decoration: none;
     border-radius: 5px;
     padding: 8px 2rem 8px;
