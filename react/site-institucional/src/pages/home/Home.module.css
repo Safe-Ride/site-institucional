@@ -200,3 +200,116 @@
 .banner-main .banner-sobre-nos .pt-2{
     font-weight: 300;
 }
+
+
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+      max-width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .container .banner-sobre-nos{
+      margin-top: 3rem;
+      margin-left: 0;
+      padding: 1rem;
+    }
+  
+    .img-sobre-nos {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .Cards_card__wMI09 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    .banner-sobre-nos .pt-2 {
+      font-weight: 400;
+    }
+  
+  }
+/*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 599px) and (max-width: 767px) {
+    .container {
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .img-sobre-nos {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .banner-sobre-nos {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-top: 3rem;
+      margin-left: 0;
+    }
+  }
+  
+  
+  /*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
+  
+  @media only screen and (min-width: 280px) and (max-width: 599px) {}
+  
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    .img-sobre-nos {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      width: 70%;
+    }
+  
+    .Cards_card__wMI09 {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  
+    .banner-sobre-nos {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-top: 3rem;
+      margin-left: 0;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .img-sobre-nos {
+      width: 100%;
+    }
+  
+    .Cards_card__wMI09 {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  
+    .container {
+      max-width: 80%;
+    }
+  
+    .banner-sobre-nos {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      width: 100%;
+      margin-top: 100px;
+      font-weight: 300;
+      margin-left: 0;
+    }
+  
+  }
