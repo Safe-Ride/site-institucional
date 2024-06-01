@@ -77,3 +77,107 @@
     text-transform: uppercase;
     text-decoration: none;
 }
+.menu-icon {
+    display: none; /* Inicialmente oculto */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-icon span {
+    background: #333;
+    display: block;
+    height: 3px;
+    margin: 5px 0;
+    width: 25px;
+}
+
+/* Show Menu Styles */
+.show {
+    display: block !important;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .list_header {
+        grid-column: 5 / span 4;
+        grid-column-start: 3;
+    }
+
+    .list_header li a {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .logo {
+        grid-column: 1 / span 1;
+        justify-self: center;
+    }
+
+    .list_header {
+        grid-column: 1 / span 1;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list_header li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .list_header li a {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+    .list_header {
+        display: none; /* Oculta a lista de opções em telas menores */
+    }
+
+    .menu-icon {
+        display: block; /* Mostra o menu hamburguer em telas menores */
+    }
+
+    .menu-icon:hover span {
+        background: #555; /* Altera a cor de fundo do ícone no hover */
+    }
+
+     .show {
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .show li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 0;
+    }
+
+    .list_header li a {
+        padding: 8px 5px;
+        font-size: 12px;
+    }
+
+    .logo img {
+        max-width: 4rem;
+    }
+}
