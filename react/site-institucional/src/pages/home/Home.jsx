@@ -12,11 +12,6 @@ import { faBell, faComments, faClock } from '@fortawesome/free-regular-svg-icons
 
 
 
-
-
-
-
-
 const Home = () => {
   return (
 

@@ -15,7 +15,7 @@
 .footer{
     background-color: var(--preto);
     color: var(--branco);
-    padding: 20px 0;
+    padding: 5% 0 3% 0;
     font: var(--fonte);
     justify-content: end;
 }
