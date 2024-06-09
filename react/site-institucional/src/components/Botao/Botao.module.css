@@ -46,7 +46,8 @@
 }
 
 .btn-branco:hover {
-    color: var(--amarelo) !important;
+    color: var(--preto) !important;
+    background-color: var(--amarelo) !important;
     transition-duration: 0.5s;
 }
 

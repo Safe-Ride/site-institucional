@@ -57,9 +57,11 @@ p {
 
 .titulo {
     width: 100%;
-    background: var(--amarelo);
+    background: var(--branco);
     padding: 1.25em;
     text-align: center;
+    font-weight: 900;
+
 }
 
 .banner {
@@ -99,16 +101,17 @@ p {
     align-items: center;
 }
 
-.content h1 {
+.content h2 {
     width: 100%;
     text-align: center;
+    font-weight: 500;
 }
 
 .banner-motorista {
     display: flex;
     /* width: 90rem; */
     padding: 4rem 0rem;
-    background: var(--amarelo);
+    background: var(--preto);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -116,7 +119,14 @@ p {
 }
 
 .subtitulo {
+    color: var(--branco);
     grid-column: 1/13;
+}
+
+.text-amarelo {
+    color: var(--amarelo);
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 .cards {
@@ -132,4 +142,17 @@ p {
 .botao-area {
     grid-column: 1/13;
     text-align: center;
+}
+
+.banner-vantagem {
+    padding: 4rem 0;
+    background-color: var(--amarelo);
+}
+
+.banner-vantagem * {
+    grid-column: 1/13;
+}
+
+.banner-vantagem p {
+    font-size: 1.5rem;
 }
