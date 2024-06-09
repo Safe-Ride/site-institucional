@@ -10,6 +10,10 @@
     --fonte: 'Montserrat', sans-serif;
 }
 
+body {
+    background-color: var(--branco);
+}
+
 h1 {
     font-family: var(--fonte);
     font-size: 2.25rem;
@@ -64,19 +68,9 @@ p {
 
 }
 
-.banner {
-    display: flex;
-    background: var(--branco);
-    justify-content: space-between;
-    align-items: center;
-    
+.banner-motorista {
+    padding-bottom: 2rem;
 }
-
-/* .container {
-    width: 80%;
-    display: flex;  
-    gap: 2rem;
-} */
 
 .container {
     width: 100%;
@@ -155,4 +149,125 @@ p {
 
 .banner-vantagem p {
     font-size: 1.5rem;
+}
+
+@media (max-width: 1130px) {
+
+    .container {
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 20px;
+        padding: 0 20px;
+    }
+
+    .container img {
+        grid-column: 5 / 9;
+        width: 100%;
+    }
+
+    .content {
+        grid-column: 1 / 5;
+    }
+
+    .content h2 {
+        padding-bottom: 2rem;
+    }
+
+    .cards {
+        /* grid-column: span 8; */
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 16px;
+        padding: 0 16px;
+    }
+
+    .container img, .content {
+        grid-column: span 4;
+        width: 100%;
+    }
+
+    .content h2 {
+        padding-bottom: 2rem;
+    }
+    
+    .cards {
+        /* grid-column: span 4; */
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-vantagem p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+    }
+
+    h4 {
+        font-size: 0.875rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+
+    .cards {
+        gap: 0.5rem;
+    }
+
+    .banner-motorista {
+        padding: 2rem 0;
+        gap: 2rem;
+    }
 }
