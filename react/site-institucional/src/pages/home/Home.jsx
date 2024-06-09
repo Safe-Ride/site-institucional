@@ -9,14 +9,15 @@ import Footer from "../../components/Footer/Footer"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear, faEye, faShieldHalved } from '@fortawesome/free-solid-svg-icons';
 import { faBell, faComments, faClock } from '@fortawesome/free-regular-svg-icons'
-
+import { useNavigate } from "react-router-dom";
 
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
 
     <>
-
       <Header />
       <div className={styles["banner-main"]}>
         <div className={styles["container"]}>
@@ -30,7 +31,10 @@ const Home = () => {
               os destinos
             </p>
             <div className={styles["button-container"]}>
-              <a href="responsavel.html" className={`${styles["btn"]} ${styles["btn-yellow"]}`}>Sou Responsável</a>
+              <a  
+              onClick={()=> navigate(`/responsavel`)}
+              className={`${styles["btn"]} ${styles["btn-yellow"]}`}>Sou Responsável
+              </a>
               <a href="motorista.html" className={`${styles["btn"]} ${styles["btn-black"]}`}>Sou Motorista</a>
             </div>
           </div>
@@ -101,7 +105,9 @@ const Home = () => {
             />
           </div>
           <div className={styles['btn']}>
-            <a href="#" className={styles['btn-card-black']}>Saiba Mais</a>
+            <a 
+            onClick={()=> navigate(`/responsavel`)} 
+            className={styles['btn-card-black']}>Saiba Mais</a>
           </div>
         </div>
       </div>
