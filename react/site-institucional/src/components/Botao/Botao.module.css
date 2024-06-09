@@ -1,0 +1,53 @@
+
+:root {
+    --header-height: 3.5rem;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --amarelo: #F2C718;
+    --branco: #f7f7f0;
+    --preto: #2d2a32;
+    --fonte: 'Montserrat', sans-serif;
+}
+
+.btn-amarelo {
+    text-align: center;
+    padding: 0.625rem 2rem;
+    border-radius: 0.5rem;
+    color: var(--preto);
+    background: var(--amarelo);
+    border: none;
+}
+
+.btn-amarelo:hover {
+    color: var(--branco) !important;
+    transition-duration: 0.5s;
+}
+
+.btn-preto {
+    text-align: center;
+    padding: 0.625rem 2rem;
+    border-radius: 0.5rem;
+    color: var(--branco);
+    background: var(--preto);
+}
+
+.btn-preto:hover {
+    color: var(--amarelo) !important;
+    transition-duration: 0.5s;
+}
+
+.btn-branco {
+    text-align: center;
+    padding: 0.625rem 2rem;
+    border-radius: 0.5rem;
+    border-color: var(--amarelo);
+    color: var(--preto);
+    background: var(--branco);
+}
+
+.btn-branco:hover {
+    color: var(--amarelo) !important;
+    transition-duration: 0.5s;
+}
+
+
