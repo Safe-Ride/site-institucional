@@ -80,6 +80,10 @@ p {
     grid-template-columns: repeat(12, 70px);
     justify-content: center;
     grid-gap: 30px;
+
+}
+.banner .container{
+    background-color: var(--branco);
 }
 
 .container img {
