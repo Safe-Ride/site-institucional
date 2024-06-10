@@ -79,6 +79,7 @@
 }
 .list_header li a:hover{
     color: var(--amarelo) !important;
+    transition-duration: 0.5s;
 }
 .menu-icon {
     display: none; /* Inicialmente oculto */

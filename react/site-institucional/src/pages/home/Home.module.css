@@ -93,10 +93,21 @@
     background-color: var(--amarelo);
     color: var(--preto) !important;
 }
+.btn-yellow:hover {
+  background-color: var(--preto);
+  color: var(--branco) !important;
+  transition-duration: 0.5s;
+}
 
 .btn-black {
     background-color: var(--preto);
     border: 1px solid white;
+}
+.btn-black:hover {
+  background: var(--branco);
+  border: var(--amarelo) solid 2px;
+  color: var(--preto) !important;
+  transition-duration: 0.2s;
 }
 
 .vantagens-motorista {
@@ -187,6 +198,18 @@
     text-decoration: none;
     border-radius: 5px;
     padding: 8px 2rem 8px;
+}
+.btn-white:hover {
+  background-color: var(--preto);
+  color: var(--branco) !important;
+  border-color: var(--branco);
+  transition-duration: 0.5s;
+}
+.btn-card-black:hover {
+  background: var(--branco);
+  border: var(--preto) solid 2px;
+  color: var(--preto) !important;
+  transition-duration: 0.2s;
 }
 
 .img-sobre-nos {

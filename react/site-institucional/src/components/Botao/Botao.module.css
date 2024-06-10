@@ -19,6 +19,7 @@
 }
 
 .btn-amarelo:hover {
+    background-color: var(--preto);
     color: var(--branco) !important;
     transition-duration: 0.5s;
 }
