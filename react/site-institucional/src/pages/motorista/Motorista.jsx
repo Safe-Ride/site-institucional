@@ -12,13 +12,13 @@ const Motorista = () => {
     return (
         <>
             <Header />
-            <div className={styles["titulo"]}>
-                <h2>ADMIN PRO</h2>
-            </div>
             <div className={styles["banner"]}>
                 <div className={styles["container"]}>
                     <div className={styles["content"]}>
-                        <h1>ADMINISTRE SEU DIA A DIA DE FORMA MAIS FÁCIL E RÁPIDA!</h1>
+                        <div className={styles["titulo"]}>
+                            <h1>ADMIN PRO</h1>
+                        </div>
+                        <h2>Administre seu dia a dia de forma mais <b>fácil</b> e <b>rápida</b>!</h2>
                         <Botao to={"/cadastro-motorista"} tipo={"btn-amarelo"}>Cadastre-se Agora</Botao>
                     </div>
                     <img src={BannerImg} alt="" />
@@ -27,7 +27,7 @@ const Motorista = () => {
 
             <section className={styles["banner-motorista"]}>
                 <div className={styles["container"]}>
-                    <h2 className={styles["subtitulo"]}>VANTAGENS PARA VOCÊ MOTORISTA</h2>
+                    <h2 className={styles["subtitulo"]}><span className={styles["text-amarelo"]}>POR QUE</span> NOS ESCOLHER</h2>
                     <div className={styles["cards"]}>
 
                         <Card
@@ -47,8 +47,15 @@ const Motorista = () => {
                         />
                     </div>
                     <div className={styles["botao-area"]}>
-                        <Botao to={"/cadastro-motorista"} tipo={"btn-preto"}>Cadastrar</Botao>
+                        <Botao to={"/cadastro-motorista"} tipo={"btn-branco"}>Cadastrar</Botao>
                     </div>
+                </div>
+            </section>
+
+            <section className={styles["banner-vantagem"]}>
+                <div className={styles["container"]}>
+                    <h2>VANTAGENS PARA VOCÊ MOTORISTA</h2>
+                    <p>Tudo isso em uma aplicação simples de usar, feita pensada em como ser usada sem te atrapalhar no trânsito da cidade. Afinal apesar de aumentar a transparência com o seu cliente, nos preocupamos principalmente com a vida de todos. </p>
                 </div>
             </section>
 
