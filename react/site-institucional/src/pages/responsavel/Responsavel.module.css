@@ -1,416 +1,242 @@
 :root {
-  --header-height: 3.5rem;
-  --h2-font-size: 1.25rem;
-  --small-font-size: 0.813rem;
-  --font-semi-bold: 600;
-  --z-tooltip: 10;
-  --z-fixed: 100;
-  --amarelo: #ffd940;
-  --amarelo-claro: #ffe990;
-  --branco: #f7f7f0;
-  --cinza: #41485d;
-  --preto: #2d2a32;
-  --fonte: 'Montserrat', sans-serif;
+    --header-height: 3.5rem;
+    --h2-font-size: 1.25rem;
+    --small-font-size: 0.813rem;
+    --font-semi-bold: 600;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --amarelo: #ffd940;
+    --amarelo-claro: #ffe990;
+    --branco: #f7f7f0;
+    --cinza: #41485d;
+    --preto: #2d2a32;
+    --fonte: 'Montserrat', sans-serif;
 }
-
-.banner-main {
-  background-color: var(--branco);
-  width: 100%;
-
+.banner-main{
+    background-color: var(--branco);
+    width: 100%;
+    
 }
 
 .container {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
 
 }
-
-.banner-main .container {
-  padding-bottom: 2.5rem;
+.banner-main .container{
+    padding-bottom: 2.5rem;
 }
-
-.banner-main-text {
-  grid-column: 1 / span 4;
-  margin-top: 3rem;
-  position: relative;
-  width: 100%;
-  min-height: 1px;
+.banner-main-text{
+    grid-column: 1 / span 4;  
+    margin-top: 3rem;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
 }
-
-.text-uppercase {
-  text-transform: uppercase;
-  font-size: 32px;
-  font-weight: 900;
+.text-uppercase{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 900;
 }
-
-.banner-main-text p {
-  margin: 0;
-  margin-top: 2rem;
-  font-weight: 300;
-  font-size: 16px;
+.banner-main-text p{
+    margin: 0;
+    margin-top: 2rem;
+    font-weight: 300;
+    font-size: 16px;
 }
-
-.img-van {
-  display: flex;
-  grid-column: span 8;
-  justify-content: center;
-  align-items: center;
+.img-van{
+    display: flex;
+    grid-column: span 8;
+    justify-content: center;
+    align-items: center;
 
 }
 
 
 .img-Banner {
-  width: 100%;
-  max-width: 638px;
-  height: auto;
-  max-height: 369px;
-  object-fit: contain;
+    width: 100%;  
+    max-width: 638px;  
+    height: auto;  
+    max-height: 369px; 
+    object-fit: contain;
 }
-
 .button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5px;
-  border-radius: 5px;
+    display: flex;
+    flex-direction: column;  
+    align-items: center; 
+    padding: 5px; 
+    border-radius: 5px;  
 }
 
 .button-container a {
-  margin: 10px 0;
-  width: 100%;
-  text-align: center;
-  color: white;
-  padding: 10px;
-  text-decoration: none;
-  border-radius: 5px;
+    margin: 10px 0;  
+    width: 100%;  
+    text-align: center; 
+    color: white;  
+    padding: 10px;  
+    text-decoration: none;  
+    border-radius: 5px;  
 }
 
 .btn-yellow {
-  background-color: var(--amarelo);
-  color: var(--preto) !important;
+    background-color: var(--amarelo);
+    color: var(--preto) !important;
 }
 
 .btn-black {
-  background-color: var(--preto);
-  border: 1px solid white;
+    background-color: var(--preto);
+    border: 1px solid white;  
 }
-
-.vantagens-motorista {
-  background-color: var(--preto);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 3% 0;
+.vantagens-motorista{
+    background-color: var(--preto);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 3% 0;
 }
-
-.vantagens-motorista .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
+.vantagens-motorista .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
 }
-
-.vantagens-motorista .title {
-  margin: 2rem;
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-  grid-column: 5 / span 5;
-  color: var(--branco);
+.vantagens-motorista .title{
+    margin: 2rem;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    grid-column: 5 / span 5;
+    color: var(--branco);
 }
-
 .vantagens-motorista span {
-  color: var(--amarelo);
+    color: var(--amarelo);
 }
-
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  gap: 2rem;
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
 }
-
-.btn {
-  padding: 7px 41px !important;
-  margin-top: 30px;
-  border-radius: 5px;
-  display: inline-block;
-  float: right;
-  text-align: center;
+.btn{
+    padding: 7px 41px !important;
+    margin-top: 30px;
+    border-radius: 5px;
+    display: inline-block;
+    float: right;
+    text-align: center;
 }
-
-.btn-white {
-  background: var(--branco);
-  border: var(--amarelo) solid 2px;
-  color: var(--preto) !important;
-  text-decoration: none;
-  border-radius: 5px;
-  padding: 8px 2rem 8px;
+.btn-white{
+    background: var(--branco);
+    border: var(--amarelo) solid 2px;
+    color: var(--preto) !important;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 2rem 8px;
 }
 
 .brand_color .titlepage h2 {
-  font-weight: bold;
-  font-size: 40px !important;
-  text-transform: uppercase;
-  text-decoration-line: underline;
+	font-weight: bold;
+	font-size: 40px !important;
+	text-transform: uppercase;
+	text-decoration-line: underline;
 }
 
 .Lastestnews .titlepage {
-  text-align: center;
-  margin-bottom: 60px;
+	text-align: center;
+	margin-bottom: 60px;
 }
 
 .Lastestnews .titlepage span {
-  color: #060606;
-  font-size: 17px;
-  line-height: 23px;
+	color: #060606;
+	font-size: 17px;
+	line-height: 23px;
 }
 
 .brand_color .titlepage {
-  margin-top: 70px;
-  padding-bottom: 70px;
-  text-align: center;
+	margin-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
 }
 
 .col-md-12 {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  display: flex;
-  justify-content: center;
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	display: flex;
+	justify-content: center;
 }
 
-.vantagens-responsavel {
-  background-color: var(--amarelo);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 3% 0;
-}
-
-.vantagens-responsavel .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-}
-
-.vantagens-responsavel .title {
-  margin: 2rem;
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-  grid-column: 5 / span 5;
-  color: var(--preto);
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 2rem;
-}
-
-.btn-card-black {
-  background: var(--preto);
-  border: var(--preto) solid 2px;
-  color: var(--branco) !important;
-  text-decoration: none;
-  border-radius: 5px;
-  padding: 8px 2rem 8px;
-}
-
-.img-sobre-nos {
-  display: flex;
-  grid-column: 1 / span 6;
-  justify-content: center;
-  align-items: center;
-}
-
-.img-banner-sobre-nos {
-  margin-top: 6rem;
-  width: 100%;
-  max-width: 638px;
-  height: auto;
-  max-height: 369px;
-  object-fit: contain;
-  border-radius: 8px;
-}
-
-.banner-sobre-nos {
-  grid-column: 7 / span 5;
-  margin-left: 3rem;
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  text-align: center;
-}
-
-.banner-main .banner-sobre-nos {
-  margin-top: 9rem;
-}
-
-.banner-main .banner-sobre-nos .text-uppercase {
-  margin-bottom: 2rem;
-}
-
-.banner-main .banner-sobre-nos .pt-2 {
-  font-weight: 500;
-}
-
-.title{
-  text-align: center;
-}
-
-/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
-
-
-/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .container {
-    max-width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .container .banner-sobre-nos{
-    margin-top: 3rem;
-    margin-left: 0;
-    padding: 1rem;
-  }
-
-  .img-sobre-nos {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .Cards_card__wMI09 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  .banner-sobre-nos .pt-2 {
-    font-weight: 400;
-  }
-
-}
-
-
-/*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
-
-@media only screen and (min-width: 599px) and (max-width: 767px) {
-  .container {
-    max-width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .img-sobre-nos {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .container .banner-sobre-nos {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-top: 3rem;
-    margin-left: 0;
-    padding: 1rem;
-  }
-
-}
-
-
-/*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
-
-@media only screen and (min-width: 280px) and (max-width: 599px) {
-  .container {
-    max-width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .img-sobre-nos {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .container .banner-sobre-nos {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-top: 3rem;
-    margin-left: 0;
-    padding: 1rem;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1500px) {
-  .img-sobre-nos {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    width: 70%;
-  }
-
-  .Cards_card__wMI09 {
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
-
-  .banner-sobre-nos {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-top: 3rem;
-    margin-left: 0;
-  }
-  .container{
-    max-width: 80%;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .img-sobre-nos {
+.vantagens-responsavel{
+    background-color: var(--amarelo);
     width: 100%;
-  }
-
-  .Cards_card__wMI09 {
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
-
-  .container {
-    max-width: 80%;
-  }
-
-  .banner-sobre-nos {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 3% 0;
+}
+.vantagens-responsavel .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.vantagens-responsavel .title{
+    margin: 2rem;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    grid-column: 5 / span 5;
+    color: var(--preto);
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
-    margin-top: 100px;
-    font-weight: 300;
-    margin-left: 0;
-  }
-
+    gap: 2rem;
+}
+.btn-card-black{
+    background: var(--preto);
+    border: var(--preto) solid 2px;
+    color: var(--branco) !important;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 2rem 8px;
+}
+.img-sobre-nos{
+    display: flex;
+    grid-column: 1 / span 6;
+    justify-content: center;
+    align-items: center;
+}
+.img-banner-sobre-nos{
+    margin-top: 6rem;
+    width: 100%;  
+    max-width: 638px;  
+    height: auto;  
+    max-height: 369px; 
+    object-fit: contain;
+    border-radius: 8px;
+}
+.banner-sobre-nos{
+    grid-column: 7 / span 5;  
+    margin-left: 3rem;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    text-align: center;
 }
 
-/* @media (min-width: 768px) and (max-width: 991px) {}
-
-@media (min-width: 576px) and (max-width: 767px) {}
-
-@media (max-width: 575px) {} */
+.banner-main .banner-sobre-nos{
+    margin-top: 9rem;
+}
+.banner-main .banner-sobre-nos .text-uppercase{
+    margin-bottom: 2rem;
+}
+.banner-main .banner-sobre-nos .pt-2{
+    font-weight: 500;
+}

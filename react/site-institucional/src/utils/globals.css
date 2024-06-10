@@ -2,7 +2,6 @@
   font-family: "Montserrat";
   src: url("../utils/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
 }
-
 :root {
   --header-height: 3.5rem;
   --h2-font-size: 1.25rem;

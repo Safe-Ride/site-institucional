@@ -42,3 +42,22 @@
     width: 100%;
     gap: 2rem;
 }
+@media (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+
+    .logo img {
+        max-width: 8rem;
+    }
+}
+
+@media (max-width: 599px) {
+    .container {
+        width: 90%;
+    }
+
+    .logo img {
+        max-width: 6rem;
+    }
+}
