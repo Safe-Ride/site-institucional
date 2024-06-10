@@ -26,7 +26,7 @@ const Header = () => {
                     </button>
                     <ul className={`${styles["list_header"]} ${showMenu ? styles["show"] : ""}`}>
                         <li><a onClick={() => navigate(`/`)}>Pagina Inicial</a></li>
-                        <li><a href="#">Sou Motorista</a></li>
+                        <li><a onClick={() => navigate(`/motorista`)}>Sou Motorista</a></li>
                         <li><a onClick={() => navigate(`/responsavel`)}>Sou Responsável</a></li>
                         <li><a href="#">Entrar</a></li>
                     </ul>

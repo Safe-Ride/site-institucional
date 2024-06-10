@@ -348,6 +348,11 @@
       max-width: 100%;
     }
   
+    .vantagens-responsavel .container{
+        display: flex;
+        align-content: center;
+    }
+
     .container .banner-sobre-nos {
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;
