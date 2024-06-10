@@ -18,7 +18,9 @@
     width: 100%;
 
 }
-
+a{
+  cursor: pointer;
+}
 .container {
     width: 100%;
     margin: 0 auto;
@@ -334,6 +336,40 @@
     .container{
       max-width: 80%;
     }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+      max-width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .container .banner-sobre-nos{
+      margin-top: 3rem;
+      margin-left: 0;
+      padding: 1rem;
+    }
+    .row{
+      flex-direction: column;
+      align-items: center;
+    }
+    .img-sobre-nos {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .Cards_card__wMI09 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    .banner-sobre-nos .pt-2 {
+      font-weight: 400;
+    }
+  
   }
   
   @media (min-width: 992px) and (max-width: 1199px) {

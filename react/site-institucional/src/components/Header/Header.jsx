@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./Header.module.css";
 import imgLogo from "../../utils/assets/logo.jpg";
 import { useNavigate } from "react-router-dom";
+import Rotas from "../../routes"
 import Home from "../../pages/home/Home";
 
 const Header = () => {
@@ -11,6 +12,11 @@ const Header = () => {
     const toggleMenu = () => {
         setShowMenu(!showMenu);
     };
+
+    const rotaCadastro = () => {
+        window.location.href = "http://localhost:3000";
+    };
+
 
     return (
         <header className={styles["header"]}>
@@ -28,6 +34,7 @@ const Header = () => {
                         <li><a onClick={() => navigate(`/`)}>Pagina Inicial</a></li>
                         <li><a onClick={() => navigate(`/motorista`)}>Sou Motorista</a></li>
                         <li><a onClick={() => navigate(`/responsavel`)}>Sou Responsável</a></li>
+                        <li><a onClick={rotaCadastro} >Cadastrar</a></li>
                         <li><a href="#">Entrar</a></li>
                     </ul>
                 </nav>

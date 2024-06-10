@@ -12,7 +12,9 @@
     --preto: #2d2a32;
     --fonte: 'Montserrat', sans-serif;
   }
-  
+  a{
+    cursor: pointer;
+  }
   .banner-main {
     background-color: var(--branco);
     width: 100%;

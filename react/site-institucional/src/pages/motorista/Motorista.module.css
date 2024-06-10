@@ -58,6 +58,9 @@ p {
     font-weight: 400;
     line-height: normal;
 }
+a{
+    cursor: pointer;
+  }
 
 .titulo {
     width: 100%;
